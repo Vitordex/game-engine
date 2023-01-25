@@ -17,6 +17,7 @@ public:
     void Update();
 
     static int Initialize();
+    static void Finalize();
 private:
     GLFWwindow* _createdWindow;
 };

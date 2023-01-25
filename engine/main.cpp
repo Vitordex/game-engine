@@ -1,15 +1,9 @@
 #include <glad/glad.h>
 #include "include/GameWindow.h"
 
-int main(int argc, char *argv[]) {
+int main() {
     int initialized = GameWindow::Initialize();
     if (initialized == 0) return 1;
-
-    GameWindow createdWindow(10, 10, "");
-    int initGlad = gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
-    createdWindow.Destroy();
-
-    if (initGlad == 0) return 1;
 
     GameWindow gameWindow(800, 600, "Test");
 
@@ -20,8 +14,7 @@ int main(int argc, char *argv[]) {
         gameWindow.Update();
     }
 
-    glfwTerminate();
-    gameWindow.Destroy();
+    GameWindow::Finalize();
 
     return 0;
 }

@@ -1,9 +1,8 @@
 //
 // Created by vitor on 25/01/2023.
 //
-
+#include <glad/glad.h>
 #include "../include/GameWindow.h"
-#include "GLFW/glfw3.h"
 
 GameWindow::GameWindow(int width, int height, const char *title) {
     GLFWwindow *createdWindow = glfwCreateWindow(width, height, title, NULL, NULL);
@@ -25,6 +24,10 @@ int GameWindow::Initialize() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
+    GameWindow createdWindow(10, 10, "");
+    int initGlad = gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
+    createdWindow.Destroy();
+
     return initialized;
 }
 
@@ -35,4 +38,8 @@ int GameWindow::ShouldClose() {
 void GameWindow::Update() {
     glfwPollEvents();
     glfwSwapBuffers(_createdWindow);
+}
+
+void GameWindow::Finalize() {
+    glfwTerminate();
 }
