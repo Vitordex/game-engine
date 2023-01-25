@@ -1,11 +1,11 @@
 # ninja log v5
 4934	6405	6963232143583338	lib/GLFW/src/CMakeFiles/glfw.dir/win32_init.c.obj	b19e9235bf2ed4ae
-2	36	0	C:/Users/vitor/Documents/study/game-engine/cmake-build-debug/CMakeFiles/cmake.verify_globs	7784543e84e20cf8
+2	20	0	C:/Users/vitor/Documents/study/game-engine/cmake-build-debug/CMakeFiles/cmake.verify_globs	7784543e84e20cf8
 13	163	6963239350548229	engine/CMakeFiles/game_engine.dir/src/GameWindow.cpp.obj	1f1f8d611533fd9f
 6851	6944	6963232149011687	lib/GLAD/libglad.a	bdffe983d1d82141
 26	2012	6963232099326452	lib/GLFW/src/CMakeFiles/glfw.dir/input.c.obj	e8fd1110a1de1ac2
 53	1777	6963232097244684	lib/GLFW/src/CMakeFiles/glfw.dir/platform.c.obj	baf23a1050c210d9
-7	167	6963239350558243	engine/CMakeFiles/game_engine.dir/main.cpp.obj	8b2d97268876ca10
+11	122	6963294481276864	engine/CMakeFiles/game_engine.dir/main.cpp.obj	8b2d97268876ca10
 11	1699	6963232096210811	lib/GLFW/src/CMakeFiles/glfw.dir/init.c.obj	abac61ea15b6530e
 15	1658	6963232095970321	lib/GLFW/src/CMakeFiles/glfw.dir/vulkan.c.obj	34af83e88f952840
 1777	3662	6963232116142605	lib/GLFW/src/CMakeFiles/glfw.dir/window.c.obj	41c1af394b330627
@@ -22,15 +22,12 @@
 5064	6517	6963232144702564	lib/GLFW/src/CMakeFiles/glfw.dir/wgl_context.c.obj	5d0511ff296d5a94
 1700	3263	6963232111968584	lib/GLFW/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	122dc99e745f74de
 5194	6850	6963232148065184	lib/GLAD/CMakeFiles/glad.dir/src/glad.c.obj	9dca272b4ee6ad14
-167	426	6963239353080327	engine/game_engine.exe	e15ab68bfad70385
-73	1195	6963228799612774	build.ninja	37ac1f1c6d319e1f
+125	313	6963294483143459	engine/game_engine.exe	c12043a208010388
+73	1195	6963586124903411	build.ninja	37ac1f1c6d319e1f
 2012	3724	6963232116393206	lib/GLFW/src/CMakeFiles/glfw.dir/null_init.c.obj	84ff93bd0d2751e7
 1803	3548	6963232114908086	lib/GLFW/src/CMakeFiles/glfw.dir/null_window.c.obj	d72cd40ee78d09c8
 3263	4933	6963232128819690	lib/GLFW/src/CMakeFiles/glfw.dir/null_monitor.c.obj	72f105c629770251
 3510	5064	6963232130063779	lib/GLFW/src/CMakeFiles/glfw.dir/win32_module.c.obj	b4a9fb39ca170cc1
 1842	3510	6963232114471061	lib/GLFW/src/CMakeFiles/glfw.dir/null_joystick.c.obj	c1a33581cf85db42
-2	38	0	C:/Users/vitor/Documents/study/game-engine/cmake-build-debug/CMakeFiles/cmake.verify_globs	7784543e84e20cf8
-7	106	6963239560222491	engine/CMakeFiles/game_engine.dir/main.cpp.obj	8b2d97268876ca10
-2	38	0	C:/Users/vitor/Documents/study/game-engine/cmake-build-debug/CMakeFiles/cmake.verify_globs	7784543e84e20cf8
-6	101	6963239677408693	engine/CMakeFiles/game_engine.dir/main.cpp.obj	8b2d97268876ca10
-101	306	6963239679383315	engine/game_engine.exe	e15ab68bfad70385
+7	85	6963294480905874	engine/CMakeFiles/game_engine.dir/src/GraphicsAPIs/GraphicsAPI.cpp.obj	d461985c0c57db1b
+4	124	6963294481296857	engine/CMakeFiles/game_engine.dir/src/GraphicsAPIs/OpenGLAPI.cpp.obj	c1e2458d831e401b

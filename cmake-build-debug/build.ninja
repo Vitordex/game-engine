@@ -1953,6 +1953,20 @@ build engine/CMakeFiles/game_engine.dir/src/GameWindow.cpp.obj: CXX_COMPILER__ga
   OBJECT_DIR = engine\CMakeFiles\game_engine.dir
   OBJECT_FILE_DIR = engine\CMakeFiles\game_engine.dir\src
 
+build engine/CMakeFiles/game_engine.dir/src/GraphicsAPIs/GraphicsAPI.cpp.obj: CXX_COMPILER__game_engine_Debug C$:/Users/vitor/Documents/study/game-engine/engine/src/GraphicsAPIs/GraphicsAPI.cpp || cmake_object_order_depends_target_game_engine
+  DEP_FILE = engine\CMakeFiles\game_engine.dir\src\GraphicsAPIs\GraphicsAPI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/vitor/Documents/study/game-engine/lib/GLAD/include -IC:/Users/vitor/Documents/study/game-engine/lib/GLFW/include
+  OBJECT_DIR = engine\CMakeFiles\game_engine.dir
+  OBJECT_FILE_DIR = engine\CMakeFiles\game_engine.dir\src\GraphicsAPIs
+
+build engine/CMakeFiles/game_engine.dir/src/GraphicsAPIs/OpenGLAPI.cpp.obj: CXX_COMPILER__game_engine_Debug C$:/Users/vitor/Documents/study/game-engine/engine/src/GraphicsAPIs/OpenGLAPI.cpp || cmake_object_order_depends_target_game_engine
+  DEP_FILE = engine\CMakeFiles\game_engine.dir\src\GraphicsAPIs\OpenGLAPI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/vitor/Documents/study/game-engine/lib/GLAD/include -IC:/Users/vitor/Documents/study/game-engine/lib/GLFW/include
+  OBJECT_DIR = engine\CMakeFiles\game_engine.dir
+  OBJECT_FILE_DIR = engine\CMakeFiles\game_engine.dir\src\GraphicsAPIs
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target game_engine
@@ -1961,7 +1975,7 @@ build engine/CMakeFiles/game_engine.dir/src/GameWindow.cpp.obj: CXX_COMPILER__ga
 #############################################
 # Link the executable engine\game_engine.exe
 
-build engine/game_engine.exe: CXX_EXECUTABLE_LINKER__game_engine_Debug engine/CMakeFiles/game_engine.dir/main.cpp.obj engine/CMakeFiles/game_engine.dir/src/GameWindow.cpp.obj | lib/GLAD/libglad.a lib/GLFW/src/libglfw3.a || lib/GLAD/libglad.a lib/GLFW/src/libglfw3.a
+build engine/game_engine.exe: CXX_EXECUTABLE_LINKER__game_engine_Debug engine/CMakeFiles/game_engine.dir/main.cpp.obj engine/CMakeFiles/game_engine.dir/src/GameWindow.cpp.obj engine/CMakeFiles/game_engine.dir/src/GraphicsAPIs/GraphicsAPI.cpp.obj engine/CMakeFiles/game_engine.dir/src/GraphicsAPIs/OpenGLAPI.cpp.obj | lib/GLAD/libglad.a lib/GLFW/src/libglfw3.a || lib/GLAD/libglad.a lib/GLFW/src/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = lib/GLAD/libglad.a  lib/GLFW/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = engine\CMakeFiles\game_engine.dir

@@ -1,15 +1,19 @@
-#include <glad/glad.h>
-#include "include/GameWindow.h"
+#include "src/GameWindow.h"
+#include "src/GraphicsAPIs/GraphicsAPI.h"
+#include "src/GraphicsAPIs/OpenGLAPI.h"
+#include "src/Types/Color.h"
 
 int main() {
     int initialized = GameWindow::Initialize();
     if (initialized == 0) return 1;
 
     GameWindow gameWindow(800, 600, "Test");
+    OpenGLAPI graphicsApi;
+    GraphicsAPI* api = &graphicsApi;
 
-    glClearColor(0.f, 0.f, 0.f, 1.f);
+    api->ClearBackground(Color::Black());
     while (!gameWindow.ShouldClose()) {
-        glClear(GL_COLOR_BUFFER_BIT);
+        api->Clear();
 
         gameWindow.Update();
     }

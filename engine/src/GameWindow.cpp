@@ -2,7 +2,7 @@
 // Created by vitor on 25/01/2023.
 //
 #include <glad/glad.h>
-#include "../include/GameWindow.h"
+#include "GameWindow.h"
 
 GameWindow::GameWindow(int width, int height, const char *title) {
     GLFWwindow *createdWindow = glfwCreateWindow(width, height, title, NULL, NULL);

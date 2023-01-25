@@ -29,7 +29,7 @@
 //========================================================================
 
 #include "internal.h"
-#include "../../../engine/include/GameWindow.h"
+#include "../../../engine/src/GameWindow.h"
 
 
 #include <assert.h>
