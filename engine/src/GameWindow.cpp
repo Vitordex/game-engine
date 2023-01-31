@@ -7,7 +7,12 @@
 GameWindow::GameWindow(int width, int height, const char *title) {
     GLFWwindow *createdWindow = glfwCreateWindow(width, height, title, NULL, NULL);
     glfwMakeContextCurrent(createdWindow);
+    glfwSetFramebufferSizeCallback(createdWindow, SetViewport);
     _createdWindow = createdWindow;
+}
+
+void GameWindow::SetViewport(GLFWwindow* window, int width, int height) {
+    glViewport(0, 0, width, height);
 }
 
 void GameWindow::Destroy() {
@@ -38,6 +43,12 @@ int GameWindow::ShouldClose() {
 void GameWindow::Update() {
     glfwPollEvents();
     glfwSwapBuffers(_createdWindow);
+}
+
+void GameWindow::ProcessInput() {
+    if (glfwGetKey(_createdWindow, GLFW_KEY_ESCAPE) != GLFW_PRESS) return;
+
+    glfwSetWindowShouldClose(_createdWindow, true);
 }
 
 void GameWindow::Finalize() {

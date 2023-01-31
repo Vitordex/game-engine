@@ -16,9 +16,13 @@ public:
     int ShouldClose();
     void Update();
 
+    void ProcessInput();
+
     static int Initialize();
     static void Finalize();
 private:
     GLFWwindow* _createdWindow;
+
+    static void SetViewport(GLFWwindow* window, int width, int height);
 };
 #endif //GAME_ENGINE_PROJECT_WINDOW_H
